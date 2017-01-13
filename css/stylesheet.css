@@ -27,10 +27,10 @@ h1,h2,h3,h4,h5,h6{
 	margin-bottom: 10px;
 }
 .header{
-	padding-top: 50px;
+	padding-top: 60px;
 }
 .content{
-	padding-top: 45px;
+	padding-top: 70px;
 	padding-bottom: 120px;
 	padding-right: 90px;
 	padding-left: 90px;
@@ -107,6 +107,10 @@ h1,h2,h3,h4,h5,h6{
 	background: url(../images/github_icon.svg) no-repeat center;
 	background-size: 38px;	
 }
-.menu:hover, #fb:hover, #tweet:hover, #line:hover, #wa:hover, #github:hover{
+#email{
+	background: url(../images/mail_icon.svg) no-repeat center;
+	background-size: 38px;	
+}
+.menu:hover, #fb:hover, #tweet:hover, #line:hover, #wa:hover, #github:hover, #email:hover{
 	background-color: rgba(255,255,255,0.1);
 }
