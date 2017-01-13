@@ -89,12 +89,24 @@ h1,h2,h3,h4,h5,h6{
 }
 #fb{
 	background: url(../images/fb_icon.svg) no-repeat center;
-	background-size: 70%;
+	background-size: 38px;
 }
 #tweet{
 	background: url(../images/twitter_icon.svg) no-repeat center;
-	background-size: 70%;
+	background-size: 38px;
 }
-.menu:hover, #fb:hover, #tweet:hover, #line:hover, #wa:hover{
+#line{
+	background: url(../images/line_icon.svg) no-repeat center;
+	background-size: 38px;	
+}
+#wa{
+	background: url(../images/wa_icon.svg) no-repeat center;
+	background-size: 38px;	
+}
+#github{
+	background: url(../images/github_icon.svg) no-repeat center;
+	background-size: 38px;	
+}
+.menu:hover, #fb:hover, #tweet:hover, #line:hover, #wa:hover, #github:hover{
 	background-color: rgba(255,255,255,0.1);
 }
