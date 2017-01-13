@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .content{
 	padding-top: 45px;
-	padding-bottom: 45px;
+	padding-bottom: 120px;
 	padding-right: 90px;
 	padding-left: 90px;
 }
@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6{
 	min-width: 33.33%;
 	/*margin: 4px;*/
 	background: url(../images/menu-icon.svg) no-repeat center;
-	background-size: 70%;
+	background-size: 80%;
 	background-color: #2d397f;
 	transition: 0.5s ease;
 	/*z-index: 0;*/
@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5,h6{
 #anatomy:hover {
 	background: url(../images/anatomy.svg) no-repeat center;
 	background-color: rgba(255,255,255,0.1);
-	background-size: 75%;
+	background-size: 85%;
 }
 .caption{
 	text-align: center;
