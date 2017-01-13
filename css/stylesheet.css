@@ -1,0 +1,69 @@
+.montserrat{
+	font-family: "Montserrat", sans-serif;
+}
+.navbar{
+	background-color: rgb(35,38,48);
+}
+.nav {
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nav li>a{
+	line-height: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.w3-navbar {
+	letter-spacing: 5px;
+	font-size: 12px; 
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 500;
+	line-height: 1.1;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.header{
+	padding-top: 50px;
+}
+.content{
+	padding-top: 45px;
+	padding-bottom: 45px;
+	padding-right: 100px;
+	padding-left: 100px;
+}
+.header-background, .content-background {
+	background-color: rgb(73,80,97);
+}
+.footer1-background{
+	background-color: rgb(61,67,81);
+}
+.footer2-background{
+	background-color: rgb(55,61,74);
+	color: white;
+}
+.menu {
+	min-height: 150px;
+	background: url(../images/menu-icon.svg) no-repeat center;
+	background-size: 70%;
+	min-width: 33.33%;
+	transition: 0.5s ease;
+	/*padding: 0;*/
+}
+.menu:hover{
+	transform: scale(1.25);
+}
+#anatomy:hover {
+	background: url(../images/anatomy.svg) no-repeat center;
+	background-size: 75%;
+}
+.caption{
+	text-align: center;
+	padding-left: 16px;
+	padding-right: 16px;
+	position: relative;
+	top: 110px;
+}
