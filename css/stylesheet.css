@@ -32,8 +32,8 @@ h1,h2,h3,h4,h5,h6{
 .content{
 	padding-top: 45px;
 	padding-bottom: 45px;
-	padding-right: 100px;
-	padding-left: 100px;
+	padding-right: 90px;
+	padding-left: 90px;
 }
 .header-background, .content-background {
 	background-color: rgb(73,80,97);
@@ -47,23 +47,54 @@ h1,h2,h3,h4,h5,h6{
 }
 .menu {
 	min-height: 150px;
+	min-width: 33.33%;
+	/*margin: 4px;*/
 	background: url(../images/menu-icon.svg) no-repeat center;
 	background-size: 70%;
-	min-width: 33.33%;
+	background-color: #2d397f;
 	transition: 0.5s ease;
+	/*z-index: 0;*/
 	/*padding: 0;*/
 }
 .menu:hover{
-	transform: scale(1.25);
+	/*transform: scale(1.25);*/
+	/*z-index: 2;*/
 }
 #anatomy:hover {
 	background: url(../images/anatomy.svg) no-repeat center;
+	background-color: rgba(255,255,255,0.1);
 	background-size: 75%;
 }
 .caption{
 	text-align: center;
 	padding-left: 16px;
 	padding-right: 16px;
-	position: relative;
-	top: 110px;
+}
+.caption>h4{
+	margin: 0;
+	margin-bottom: 5px; 
+}
+#footer-2{
+	padding-left: 50px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+.share{
+	height: 48px;
+	width: 48px;
+	border-radius: 8px;
+	margin-left: 8px; 
+	margin-right: 8px; 
+	transition: 0.5s ease;
+}
+#fb{
+	background: url(../images/fb_icon.svg) no-repeat center;
+	background-size: 70%;
+}
+#tweet{
+	background: url(../images/twitter_icon.svg) no-repeat center;
+	background-size: 70%;
+}
+.menu:hover, #fb:hover, #tweet:hover, #line:hover, #wa:hover{
+	background-color: rgba(255,255,255,0.1);
 }
