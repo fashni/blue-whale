@@ -48,22 +48,9 @@ h1,h2,h3,h4,h5,h6{
 .menu {
 	min-height: 150px;
 	min-width: 33.33%;
-	/*margin: 4px;*/
-	background: url(../images/menu-icon.svg) no-repeat center;
-	background-size: 80%;
+	background: url(../images/menu_icon.svg) center/auto 80% no-repeat;
 	background-color: #2d397f;
-	transition: 0.5s ease;
-	/*z-index: 0;*/
-	/*padding: 0;*/
-}
-.menu:hover{
-	/*transform: scale(1.25);*/
-	/*z-index: 2;*/
-}
-#anatomy:hover {
-	background: url(../images/anatomy.svg) no-repeat center;
-	background-color: rgba(255,255,255,0.1);
-	background-size: 85%;
+	transition: 1s ease;
 }
 .caption{
 	text-align: center;
@@ -112,5 +99,17 @@ h1,h2,h3,h4,h5,h6{
 	background-size: 38px;	
 }
 .menu:hover, #fb:hover, #tweet:hover, #line:hover, #wa:hover, #github:hover, #email:hover{
+	background-color: rgba(255,255,255,0.1);
+}
+#anatomy:hover {
+	background: url(../images/anatomy.svg) center/auto 85% no-repeat;
+	background-color: rgba(255,255,255,0.1);
+}
+#taxonomy:hover {
+	background: url(../images/taxonomy.svg) 50% 30%/auto 80% no-repeat;
+	background-color: rgba(255,255,255,0.1);
+}
+#evolution:hover {
+	background: url(../images/evolution.svg) 50% 5%/auto 80% no-repeat;
 	background-color: rgba(255,255,255,0.1);
 }
