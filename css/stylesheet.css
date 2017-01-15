@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6{
 	padding-bottom: 50px;
 }
 .content{
-	padding-top: 20px;
+	padding-top: 60px;
 	padding-bottom: 20px;
 	padding-right: 50px;
 	padding-left: 50px;
@@ -137,26 +137,29 @@ h1,h2,h3,h4,h5,h6{
 	0% 	{
 		left:0%;
 		}
-	20% {
+	17.5% {
 		left:0%;
 		}
-	25% {
+	22.5% {
 		left:-100%;
 		}
-	45%	{
+	40%	{
 		left:-100%;
 		}
-	50%	{
+	45%%	{
 		left:-200%;
 		}
-	70% {
+	62.5% {
 		left:-200%;
 		}
-	75%	{
+	67.5%	{
 		left:-300%;
 		}
-	95%	{
+	85%	{
 		left:-300%;
+		}
+	90% {
+		left:-400%;
 		}
 	100% {
 		left:-400%;
@@ -260,7 +263,7 @@ h1,h2,h3,h4,h5,h6{
 #about_footer {
 	height: 25px;
 }
-#deskripsi, #habitat_, #taksonomi, #evolusi, #anatomi, #depopulasi {
+#deskripsi, #habitat_, #taksonomi, #evolusi, #anatomi, #populasi {
 	display: none;
 }
 .videoWrapper {
