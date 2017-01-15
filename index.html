@@ -12,25 +12,26 @@
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	</head>
 	<body class="montserrat">
+		<!-- nav -->
+		<nav class="w3-theme-dark w3-top">
+			<div class="nav">					
+				<ul class="w3-navbar w3-small w3-left-align">
+					<li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+						<a class="w3-hover-none w3-text-white w3-hover-text-cyan w3-xlarge" href="#" onclick="show_hide('menu-collapse')"><i class="fa fa-bars"></i></a>
+					</li>
+					<li><a class="w3-hover-none w3-padding-0" href="#home"><img src="images/logo1.png" style="height: 50px"></a></li>
+					<li class="w3-hide-small w3-right"><a class="w3-hover-none w3-text-light-grey w3-hover-text-indigo" href="#" onclick="show_hide('about')">ABOUT</a></li>
+				</ul>
+				<div id="menu-collapse" class="w3-animate-opacity w3-hide-large w3-hide-medium" style="display: none;">
+					<ul class="w3-navbar w3-left-align w3-small">
+						<li><a class="w3-hover-none w3-text-light-grey w3-hover-text-cyan" href="#" onclick="show_about()">ABOUT</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
 		<!-- Header -->
 		<header class="header w3-container w3-text-white w3-theme-d3 w3-center">
-			<nav class="w3-theme-dark w3-top">
-				<div class="nav">					<ul class="w3-navbar w3-small w3-left-align">
-
-						<li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-							<a class="w3-hover-none w3-text-white w3-hover-text-cyan w3-xlarge" href="#" onclick="show_hide('menu-collapse')"><i class="fa fa-bars"></i></a>
-						</li>
-						<li><a class="w3-hover-none w3-padding-0" href="#home"><img src="images/logo1.png" style="height: 50px"></a></li>
-						<li class="w3-hide-small w3-right"><a class="w3-hover-none w3-text-light-grey w3-hover-text-indigo" href="#" onclick="show_hide('about')">ABOUT</a></li>
-					</ul>
-					<div id="menu-collapse" class="w3-animate-opacity w3-hide-large w3-hide-medium" style="display: none;">
-						<ul class="w3-navbar w3-left-align w3-small">
-							<li><a class="w3-hover-none w3-text-light-grey w3-hover-text-cyan" href="#" onclick="show_about()">ABOUT</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
 			<!-- <div id="slidena" class="w3-theme-d1"> -->
 			<figure id="slidena">
 				<div id="hiji">
@@ -152,42 +153,60 @@
 			<div class="w3-modal-content w3-card-8 w3-animate-zoom">
 				<header class="w3-container w3-theme-d5"> 
 					<span onclick="show_hide('about')" class="w3-closebtn">&times;</span>
-					<h2>Tentang kami</h2>
+					<h2 id="about_header">Tentang kami</h2>
 				</header>
 				<section class="team">
-					<article class="w3-container leader w3-card-4">
-						<h4>Ketua</h4>
-						<hr>
-						<img src="gambar/161511019.jpg" class="w3-left w3-circle w3-margin-right" style="width: 60px; height: 60px">
-						<p>Nama  : Mufid Jamaluddin<br>
-						NIM  : 161511019</p>
+					<article class="w3-row">
+						<div class=" w3-col l12 w3-container leader w3-card-4">
+							<h4 class="w3-center" style="margin-top: 10px">Ketua</h4>
+							<hr style="margin-top: 2px; margin-bottom: 10px">
+							<div id="leader">
+								<img src="gambar/161511019.jpg" class="w3-left w3-circle pic">
+								<p>Nama  : Mufid&nbsp;Jamaluddin<br>
+								NIM  : 161511019</p>
+							</div>
+						</div>
 					</article>
 					<article class="w3-row">
 						<div class="w3-col m12">
 							<div class="w3-row">
-								<div class="w3-half w3-container member w3-card-2">
-									<p>Member</p>
+								<div class="w3-half w3-container member w3-card-4">
+									<h4 style="margin-top: 10px">Anggota</h4>
+									<hr style="margin-top: 2px; margin-bottom: 10px">
+									<img src="gambar/161511011.jpg" class="w3-left w3-circle pic">
+									<p>Nama  : Haya&nbsp;Utami<br>
+									NIM  : 161511011</p>
 								</div>
-								<div class="w3-half w3-container member w3-card-2">
-									<p>Member</p>
+								<div class="w3-half w3-container member w3-card-4">
+									<h4 style="margin-top: 10px">Anggota</h4>
+									<hr style="margin-top: 2px; margin-bottom: 10px">
+									<img src="gambar/161511014.jpg" class="w3-left w3-circle pic">
+									<p>Nama  : Haya&nbsp;Utami<br>
+									NIM  : 161511014</p>
 								</div>
 							</div>
 						</div>
 						<div class="w3-col m12">
 							<div class="w3-row">
-								<div class="w3-half w3-container member w3-card-2">
-									<p>Member</p>
+								<div class="w3-half w3-container member w3-card-4">
+									<h4 style="margin-top: 10px">Anggota</h4>
+									<hr style="margin-top: 2px; margin-bottom: 10px">
+									<img src="gambar/161511044.jpg" class="w3-left w3-circle pic">
+									<p>Nama  : Fahmi&nbsp;R&nbsp;Mahdani<br>
+									NIM  : 161511044</p>
 								</div>
-								<div class="w3-half w3-container member w3-card-2">
-									<p>Member</p>
+								<div class="w3-half w3-container member w3-card-4">
+									<h4 style="margin-top: 10px">Anggota</h4>
+									<hr style="margin-top: 2px; margin-bottom: 10px">
+									<img src="gambar/161511055.jpg" class="w3-left w3-circle pic">
+									<p>Nama  : M.&nbsp;Rasyid&nbsp;Ulwan<br>
+									NIM  : 161511055</p>
 								</div>
 							</div>
 						</div>
 					</article>
 				</section>
-				<footer class="w3-container w3-theme-d5">
-					<div style="height: 50px"></div>
-				</footer>
+				<footer id="about_footer" class="w3-container w3-theme-d5"></footer>
 			</div>
 		</aside>
 
