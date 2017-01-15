@@ -12,26 +12,28 @@
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	</head>
 	<body class="montserrat">
-		<!-- nav -->
-		<nav class="w3-theme-dark w3-top">
-			<div class="nav">					
-				<ul class="w3-navbar w3-small w3-left-align">
-					<li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-						<a class="w3-hover-none w3-text-white w3-hover-text-cyan w3-xlarge" href="javascript:void(0);" onclick="show_hide('menu-collapse')"><i class="fa fa-bars"></i></a>
-					</li>
-					<li><a class="w3-hover-none w3-padding-0" href="#home"><img src="images/logo1.png" style="height: 50px"></a></li>
-					<li class="w3-hide-small w3-right"><a class="w3-hover-none w3-text-light-grey w3-hover-text-indigo" href="javascript:void(0);" onclick="show_hide('about')">ABOUT</a></li>
-				</ul>
-				<div id="menu-collapse" class="w3-animate-opacity w3-hide-large w3-hide-medium" style="display: none;">
-					<ul class="w3-navbar w3-left-align w3-small">
-						<li><a class="w3-hover-none w3-text-light-grey w3-hover-text-cyan" href="javascript:void(0);" onclick="show_hide('about')">ABOUT</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
 
 		<!-- Header -->
-		<header class="header w3-container w3-text-white w3-theme-d3 w3-center">
+		<header id="top" class="header w3-container w3-text-white w3-theme-d3">
+			<!-- nav -->
+			<nav class=" nav-container w3-top">
+				<div class="nav">					
+					<ul class="w3-navbar w3-small w3-left-align">
+						<li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+							<a class="w3-hover-none w3-text-white w3-hover-text-cyan w3-xlarge" href="javascript:void(0);" onclick="show_hide('menu-collapse')"><i class="fa fa-bars"></i></a>
+						</li>
+						<li><a class="w3-hover-none w3-padding-0" href="#" onclick="home()"><img src="images/logo1.png" style="height: 50px"></a></li>
+						<li class="w3-hide-small w3-right"><a class="w3-hover-none w3-text-light-grey w3-hover-text-indigo" href="javascript:void(0);" onclick="show_hide('about')">ABOUT</a></li>
+						<li class="w3-hide-small w3-right"><a class="w3-hover-none w3-text-light-grey w3-hover-text-indigo" href="#" onclick="home()">HOME</a></li>
+					</ul>
+					<div id="menu-collapse" class="w3-animate-opacity w3-hide-large w3-hide-medium" style="display: none;">
+						<ul class="w3-navbar w3-left-align w3-small">
+							<li><a class="w3-hover-none w3-text-light-grey w3-hover-text-cyan" href="#" onclick="home()">HOME</a></li>
+							<li><a class="w3-hover-none w3-text-light-grey w3-hover-text-cyan" href="javascript:void(0);" onclick="show_hide('about')">ABOUT</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 			<div id="slidena">
 			<figure>
 				<div id="hiji">
@@ -78,39 +80,39 @@
 			<!-- <h2>Yuk Kita Kenalan dengan Paus Biru</h2> -->
 		</header>
 		
-		<section class="content w3-row w3-theme-d3">
+		<section id="nav" class="content w3-row w3-theme-d3">
 			<article class="w3-col m12 l6">
 				<div class="w3-row">
-					<a href="#deskripsi">
+					<a href="#deskripsi" onclick="showDesc()">
 						<div id="description" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
-							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Deskripsi</h4></div>
+							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Umum</h4></div>
 						</div>
 					</a>
-					<a href="#habitat_">
-						<div id="habitat" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
-							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Habitat</h4></div>
-						</div>
-					</a>
-					<a href="#taksonomi">
+					<a href="#taksonomi" onclick="showTaks()">
 						<div id="taxonomy" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
 							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Taksonomi</h4></div>
+						</div>
+					</a>
+					<a href="#habitat_" onclick="showHab()">
+						<div id="habitat" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
+							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Habitat</h4></div>
 						</div>
 					</a>
 				</div>
 			</article>
 			<article class="w3-col m12 l6">
 				<div class="w3-row">
-					<a href="#evolusi">
+					<a href="#evolusi" onclick="showEvo()">
 						<div id="evolution" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
 							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Evolusi</h4></div>
 						</div>
 					</a>
-					<a href="#anatomi">
+					<a href="#anatomi" onclick="showAnat()">
 						<div id="anatomy" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
 							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Anatomy</h4></div>
 						</div>
 					</a>
-					<a href="#depopulasi">
+					<a href="#depopulasi" onclick="showDep()">
 						<div id="depopulation" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
 							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Depopulasi</h4></div>
 						</div>
@@ -120,19 +122,25 @@
 		</section>
 
 		<!-- Deskripsi -->
-		<section id="deskripsi" class="content w3-theme-d2">
+		<section id="deskripsi" class="article w3-theme-d2">
 			<!-- Isi -->
-			<img src="images/Paus-definisi.png" alt="tidak ada gambar">
-			<p>
-			<br>Paus Biru atau <i>Balaenoptera musculus</i> dipercaya sebagai hewan terbesar yang pernah ada di dunia. Dengan ukurannya paus biru bukan sekedar menjadi hewan mamalia terbesar di laut, paus biru juga mengalahkah ukuran besar binatang-binatang darat lainnya. Panjang tubuh paus biru mencapai 33 meter.</br>
+			<div class="w3-theme-d3" style="height: 51px"></div>
+			<article class="w3-container w3-theme-l1 isi">
+				<div class="w3-card-4">
+					<img src="images/umum.png" alt="tidak ada gambar" style="width: 100%">				
+				</div>
+				<p>
+				<br>Paus Biru atau <i>Balaenoptera musculus</i> dipercaya sebagai hewan terbesar yang pernah ada di dunia. Dengan ukurannya paus biru bukan sekedar menjadi hewan mamalia terbesar di laut, paus biru juga mengalahkah ukuran besar binatang-binatang darat lainnya. Panjang tubuh paus biru mencapai 33 meter.</br>
 
-			<br>Paus biru dalam bahasa Inggris sering disebut sebagai <i>Blue Whale, Pygmy Blue Whale, Sibbald’s Rorqual, Sulphur-bottom Whale</i>. Sedangkan dalam bahasa latin, paus biru dinamai <i>Balaenoptera musculus</i>.</br>
+				<br>Paus biru dalam bahasa Inggris sering disebut sebagai <i>Blue Whale, Pygmy Blue Whale, Sibbald’s Rorqual, Sulphur-bottom Whale</i>. Sedangkan dalam bahasa latin, paus biru dinamai <i>Balaenoptera musculus</i>.</br>
 
-			<br>Linnaeus memberi nama paus biru dengan nama genus yang berasal dari kata Latin balaena yang berarti “paus” dan kata Yunani pteron yang berarti “sirip” atau “sayap.” Nama spesiesnya, musculus, adalah kependekan kata Latin mus yang berarti “tikus”. Kata “musculus” bisa bisa juga diartikan sebagai “otot”.</br>
+				<br>Linnaeus memberi nama paus biru dengan nama genus yang berasal dari kata Latin balaena yang berarti “paus” dan kata Yunani pteron yang berarti “sirip” atau “sayap.” Nama spesiesnya, musculus, adalah kependekan kata Latin mus yang berarti “tikus”. Kata “musculus” bisa bisa juga diartikan sebagai “otot”.</br>
+				</p>
+			</article>
 		</section>
 		
 		<!-- Habitat -->
-		<section id="habitat_" class="content w3-theme-d3">
+		<section id="habitat_" class="article w3-theme-d2">
 			<!-- Isi -->
 			<h1>Populasi dan persebaran saat ini</h1>
 
@@ -167,29 +175,66 @@
 		</section>
 
 		<!-- Taksonomi -->
-		<section id="taksonomi" class="content w3-theme-d2">
+		<section id="taksonomi" class="article w3-theme-d2">
 			<!-- Isi -->
-			<img src="images/Paus-Taksonomi1.png" alt="tidak ada gambar">
-			<p>
-				<br>Paus biru merupakan bagian dari famili <i>Balaenopteridae</i>, yang juga meliputi paus bungkuk, paus sirip, paus bryde, paus sei dan paus minke. Secara evolusioner, famili <i>Balaenopteridae</i> diyakini terpisah dari paus lain dalam subordo Mysticeti pad masa Oligosen. Masih belum diketahui kapan anggota-anggota famili tersebut terpisah satu sama lain. Paling tidak tercatat sebelas kasus persilangan antara paus biru dengan paus sirip di alam. Menurut Arnason dan Gullberg, jarak genetik antara paus biru dengan paus sirip kurang lebih mirip dengan jarak antara manusia dan gorila. Sementara itu, beberapa peneliti yang bertugas di Fiji melaporkan bahwa mereka telah mengabadikan citra paus hasil persilangan antara paus biru dan paus bungkuk.</br>
+			<div class="w3-theme-d3" style="height: 51px"></div>
+			<article class="w3-container w3-theme-l1 isi">
+				<div class="w3-card-4">
+					<img src="images/Paus-Taksonomi1.png" alt="tidak ada gambar" style="width: 100%">				
+				</div>
+				<p>
+					<br>Paus biru merupakan bagian dari famili <i>Balaenopteridae</i>, yang juga meliputi paus bungkuk, paus sirip, paus bryde, paus sei dan paus minke. Secara evolusioner, famili <i>Balaenopteridae</i> diyakini terpisah dari paus lain dalam subordo Mysticeti pad masa Oligosen. Masih belum diketahui kapan anggota-anggota famili tersebut terpisah satu sama lain. Paling tidak tercatat sebelas kasus persilangan antara paus biru dengan paus sirip di alam. Menurut Arnason dan Gullberg, jarak genetik antara paus biru dengan paus sirip kurang lebih mirip dengan jarak antara manusia dan gorila. Sementara itu, beberapa peneliti yang bertugas di Fiji melaporkan bahwa mereka telah mengabadikan citra paus hasil persilangan antara paus biru dan paus bungkuk.</br>
 
-				<br>Deskripsi pertama paus biru dibuat oleh Robert Sibbald dalam karyanya yang berjudul Phalainologia Nova (1694). Pada September 1692, Sibbald menemukan seekor paus biru yang terdampar di <i>Firth of Forth</i> - seekor jantan dengan panjang 78 kaki - yang memiliki "plat yang hitam dan bertanduk" dan "dua bukaan besar yang bentuknya hampir seperti piramida".</br>
+					<br>Deskripsi pertama paus biru dibuat oleh Robert Sibbald dalam karyanya yang berjudul Phalainologia Nova (1694). Pada September 1692, Sibbald menemukan seekor paus biru yang terdampar di <i>Firth of Forth</i> - seekor jantan dengan panjang 78 kaki - yang memiliki "plat yang hitam dan bertanduk" dan "dua bukaan besar yang bentuknya hampir seperti piramida".</br>
 
-				<br>Nama spesifik musculus merupakan istilah dalam bahasa Latin yang dapat berarti "otot", namun dapat juga diterjemahkan menjadi "tikus kecil". Linnaeus, yang menamai spesies ini di dalam Systema Naturae tahun 1758, mungkin mengetahui hal ini dan bermaksud menjadikannya sebagai sebuah ironi. Spesies ini juga disebut sulphur-bottom (bagian bawah sulfur) oleh Herman Melville dalam novelnya Moby-Dick karena bagian bawah yang berwarna jingga-coklat atau semburat kuning yang disebabkan oleh diatom di kulitnya. Nama lain yang pernah digunakan adalah rorqual sibbald (dinamai dari Sir Robert Sibbald), paus biru raksasa dan rorqual besar utara. Nama-nama tersebut kini sudah tidak digunakan lagi. Istilah paus biru pertama kali digunakan dalam novel Moby Dick, yang hanya menyebutnya secara sepintas dan tidak mengaitkannya secara spesifik dengan spesies ini. Nama tersebut berasal dari kata dalam bahasa Norwegia blahval, yang dicetuskan oleh Svend Foyn setelah menyempurnakan senapan harpunnya; seorang ilmuwan Norwegia yang bernama G. O. Sars membuatnya menjadi nama umum dalam bahasa Norwegia pada tahun 1874.</br>
+					<br>Nama spesifik musculus merupakan istilah dalam bahasa Latin yang dapat berarti "otot", namun dapat juga diterjemahkan menjadi "tikus kecil". Linnaeus, yang menamai spesies ini di dalam Systema Naturae tahun 1758, mungkin mengetahui hal ini dan bermaksud menjadikannya sebagai sebuah ironi. Spesies ini juga disebut sulphur-bottom (bagian bawah sulfur) oleh Herman Melville dalam novelnya Moby-Dick karena bagian bawah yang berwarna jingga-coklat atau semburat kuning yang disebabkan oleh diatom di kulitnya. Nama lain yang pernah digunakan adalah rorqual sibbald (dinamai dari Sir Robert Sibbald), paus biru raksasa dan rorqual besar utara. Nama-nama tersebut kini sudah tidak digunakan lagi. Istilah paus biru pertama kali digunakan dalam novel Moby Dick, yang hanya menyebutnya secara sepintas dan tidak mengaitkannya secara spesifik dengan spesies ini. Nama tersebut berasal dari kata dalam bahasa Norwegia blahval, yang dicetuskan oleh Svend Foyn setelah menyempurnakan senapan harpunnya; seorang ilmuwan Norwegia yang bernama G. O. Sars membuatnya menjadi nama umum dalam bahasa Norwegia pada tahun 1874.</br>
 
-				<br>Para ahli membagi spesies ini ke dalam tiga atau empat subspesies: B. m. musculus, paus biru utara yang terdiri atas populasi di Atlantik Utara dan Pasifik Utara; B. m. intermedia; paus biru selatan yang tinggal di Samudra Selatan; B. m. brevicauda, paus biru kerdil yang dapat ditemui di Samudra Hindia dan Pasifik Selatan; dan B. m. indica, rorqual hindia besar yang juga tinggal di Samudra Hindia, walaupun pengklasifikasian ini masih kontroversial karena subspesies ini mungkin merupakan subspesies yang sama dengan B. m. brevicauda.</br>
+					<br>Para ahli membagi spesies ini ke dalam tiga atau empat subspesies: B. m. musculus, paus biru utara yang terdiri atas populasi di Atlantik Utara dan Pasifik Utara; B. m. intermedia; paus biru selatan yang tinggal di Samudra Selatan; B. m. brevicauda, paus biru kerdil yang dapat ditemui di Samudra Hindia dan Pasifik Selatan; dan B. m. indica, rorqual hindia besar yang juga tinggal di Samudra Hindia, walaupun pengklasifikasian ini masih kontroversial karena subspesies ini mungkin merupakan subspesies yang sama dengan B. m. brevicauda.</br>
 
-				<br>Paus biru biasanya diklasifikasikan sebagai salah satu dari delapan spesies paus dalam genus Balaenoptera. Ada pula ahli yang menempatkan paus ini dalam genus Sibbaldus, walaupun pengklasifikasian ini tidak disetujui. Analisis rangkaian asam deoksiribonukleat (ADN) menunjukkan bahwa paus biru secara filogenetik lebih dekat dengan paus sei (<i>Balaenoptera borealis</i>) dan paus bryde (<i>Balaenoptera brydei</i>) daripada spesies Balaenoptera lainnya, dan lebih dekat dengan paus bungkuk (<i>Megaptera</i>) dan paus abu-abu (<i>Eschrichtius</i>) daripada paus minke (<i>Balaenoptera acutorostrata</i> dan <i>Balaenoptera bonaerensis</i>). Jika penelitian lebih lanjut memastikan hubungan ini, mungkin famili Balaenopteridae perlu direklasifikasi.</br>
-			</p>
+					<br>Paus biru biasanya diklasifikasikan sebagai salah satu dari delapan spesies paus dalam genus Balaenoptera. Ada pula ahli yang menempatkan paus ini dalam genus Sibbaldus, walaupun pengklasifikasian ini tidak disetujui. Analisis rangkaian asam deoksiribonukleat (ADN) menunjukkan bahwa paus biru secara filogenetik lebih dekat dengan paus sei (<i>Balaenoptera borealis</i>) dan paus bryde (<i>Balaenoptera brydei</i>) daripada spesies Balaenoptera lainnya, dan lebih dekat dengan paus bungkuk (<i>Megaptera</i>) dan paus abu-abu (<i>Eschrichtius</i>) daripada paus minke (<i>Balaenoptera acutorostrata</i> dan <i>Balaenoptera bonaerensis</i>). Jika penelitian lebih lanjut memastikan hubungan ini, mungkin famili Balaenopteridae perlu direklasifikasi.</br>
+				</p>
+			</article>
 		</section>
 
 		<!-- Evolusi -->
-		<section id="evolusi" class="content w3-theme-d3">
+		<section id="evolusi" class="article w3-theme-d2">
 			<!-- Isi -->
+			<div class="w3-theme-d3" style="height: 51px"></div>
+			<article class="w3-container w3-theme-l1 isi">
+				<h1>Evolusi Paus</h1>
+				<hr>
+				<p>Meskipun terlihat seperti ikan, seperti jenis paus lainnya, Paus Biru bukanlah ikan. Paus Biru merupakan hewan mamalia yang termasuk kedalam infraordo <i>Cetacea</i>, yaitu salah satu cabang dari mamalia air yang di dalamnya termasuk lumba-lumba, pesut, dan jenis paus lainnya.</p>
+				<p>Hewan <i>Cetacea</i> (termasuk Paus Biru) berevolusi dari mamalia darat berkuku-empat <i>(four-limbed land mammals)</i>, berbagi nenek moyang yang sama dengan kuda nil, yang hidup sekitar 45-50 juta tahun yang lalu. Mereka secara bertahap kehilangan anggota tubuh mereka, mengembangkannya untuk dapat bertahan di habitat akuatik. Banyak garis keturunan paus berevolusi dan berkembang dan akhirnya punah. Semua paus yang hidup turun dari dua garis keturunan yang memisahkan diri dari satu sama lain sekitar 40 juta tahun yang lalu, yang dikenal sebagai paus balin (salah satunya adalah Paus Biru) dan paus bergigi (termasuk lumba-lumba). Hal tersebut dapat dan telah dibuktikan oleh beberapa bidang keilmuan, diantaranya Anatomi, Embriologi, Paleontologi, dan Genetika.</p>
+				<p>Untuk lebih memahami tentang evolusi paus, silakan baca jurnal ilmiah tentang filogenetik paus modern oleh <i>John Gatesy</i> di <a href="https://www.researchgate.net/publication/232720076_A_Phylogenetic_Blueprint_for_a_Modern_Whale" target="_blank">sini</a></p>
+				<div class="w3-row-padding w3-margin-top w3-margin-bottom">
+				  <div class="w3-col l3">
+				    <div class="w3-card-4">
+				      <img src="gambar/evo1.jpg" style="width:100%;max-height: 610px;cursor:pointer" onclick="zoom(this)">
+				      <div class="w3-container w3-theme-d1">
+				        <p><i>Percabangan paus balin dan paus bergigi</i></p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="w3-col l3">
+				    <div class="w3-card-4">
+				      <img src="gambar/evo2.png" style="width:100%;max-height: 610px;cursor:pointer" onclick="zoom(this)">
+				      <div class="w3-container w3-theme-d1">
+				        <p><i>Filogenetik Paus Biru</i></p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="w3-card-4 w3-theme-d1 w3-margin-bottom">
+					<div class="w3-container"><p><i>Bukti evolusi paus</i></p></div>
+					<div class="videoWrapper">
+						<!-- <iframe class="w3-container" width="560" height="315" src="https://www.youtube.com/embed/nBpdHVM1Sb8" frameborder="0" allowfullscreen></iframe> -->
+					</div>
+				</div>
+			</article>
 		</section>
 
 		<!-- Anatomi -->
-		<section id="anatomi" class="content w3-theme-d2">
+		<section id="anatomi" class="article w3-theme-d2">
 			<!-- Isi -->
 			<img src="images/Paus-anatomi.png" alt="Tidak Ada Gambar">
 			<p>
@@ -228,7 +273,7 @@
 		</section>
 
 		<!-- Depopulasi -->
-		<section id="depopulasi" class="content w3-theme-d3">
+		<section id="depopulasi" class="article w3-theme-d2">
 			<!-- Isi -->
 						<img src="gambar/2.jpg" alt="perburuan"></img>
 			<h2><strong>MENGAPA PAUS BIRU DIBURU?</strong></h2>
@@ -287,17 +332,17 @@
 				</p>
 				
 			<h2><strong>Upaya konservasi paus biru (B. musculus)</strong></h2>
-Paus biru merupakan hewan yang terancam punah sehingga diperlukan upaya konservasi. Beberapa upaya konservasi telah dilakukan baik oleh pemerintah maupun oleh Lembaga Swadaya Masyarakat yang bergerak di bidang konservasi sumberdaya alam. Berikut adalah beberapa upaya konservasi yang telah dilakukan:
-1.    Paus biru ditetapkan sebagai satwa yang dilindungi oleh pemerintah Indonesia dalam Peraturan Pemerintah Republik Indonesia No. 7 Tahun 1999 tentang Pengawetan Jenis Tumbuhan dan Satwa (Pemerintah Republik Indonesia 1999)
-2.  Penetapan Kawasan Konservasi Perairan Nasional Laut Sawu yang dikelola sebagai Taman Nasional Perairan berdasarkan Keputusan nomor 20 5/KEPMEN-KP/2014 oleh Kementrian Kelautan dan Perikanan (KKP 2014)
-3.  Pembentukan Unit Pelaksanaan Teknis oleh KKP yaitu Balai Kawasan Konservasi Perairan Nasional (BKKPN) Kupang sejak 2008 (KKP 2011)
-4.  Upaya dari LSM seperti WWF (World Wildlife Fund) yang terlibat dalam implementasi pengelolaan Marine Protected Areas (MPAs) atau Kawasan Konservasi Laut (KKL) di kawasan seluas 4,9 juta hektar dari total 15,8 juta hektar yang ada di Indonesia termasuk di Solor-Alor, Nusa Tenggara Timur (WWF 2014)
-5.      Penetapan Paus Biru sebagai hewan yang dilindungi sejak 1966 oleh IWC (International Whaling Comission) dan penetapan batas tangkap nol sejak 1986 untuk semua penangkapan paus komersial (Reilly 2008)
-Kawasan Konservasi Perairan menurut IUCN (1994) adalah perairan pasang surut, dan wilayah sekitarnya, termasuk flora dan fauna di dalamnya, dan penampakan sejarah serta budaya, yang dilindungi secara hukum atau cara lain yang efektif, untuk melindungi sebagian atau seluruh lingkungan di sekitarnya. Sedangkan menurut Peraturan Pemerintah No. 60 Tahun 2007 dijelaskan bahwa Kawasan Konservasi Perairan (KKP) adalah kawasan perairan yang dilindungi, dikelola dengan sistem zonasi, untuk mewujudkan pengelolaan sumber daya ikan dan lingkungannya secara berkelanjutan. KKP terdiri atas Taman Nasional Perairan, Taman Wisata Perairan, Suaka Alam Perairan, dan Suaka Perikanan (Susanto, 2011).
-Menurut Setiawan dkk (2014) kategori kelangkaan akibat perdagangan menurut CITES adalah:
-1.   Appendix I adalah semua spesies hidupan liar yang terancam (threatened) dari kepunahan (extinction) yang dapat atau kemungkinan dapat disebabkan oleh adanya tindakan perdagangan internasional. Penjualan dari jenis kehidupan liar dalam kategori ini hanya dapat dilakukan setelah melalui proses pengaturan atau kajian yang sangat ketat dengan maksud tidak menambah tingkat tekanan terhadap kemampuan hidupnya (survival) dan hanya bisa dilakukan dengan alasan yang sangat kuat.
-2.    Appendix II adalah (a) semua spesies hidupan liar walaupun tidak dalam kondisi terancam dari kepunahan, tetapi dapat menjadi terancam, terkecuali perdagangan terhadap kehidupan liar tersebut dikenai suatu peraturan yang ketat dalam rangka menghindari pemanfaatan yang tidak sepadan dengan daya kemampuan hidupnya, (b) hidupan liar lainnya yang perlu dikenai pengaturan dengan maksud bahwa perdagangan hidupan liar tersebut menghindari pemanfatan yang tidak sepadan dengan adanya kemampuan hidupnya, dan (c) dapat dilakukan pengontrolan secara efektif.
-3.    Appendix III adalah semua spesies hidupan liar dimana semua pihak telah mengidentifikasinya sebagai bahan perdagangan yang dapat diterapkan sesuai dengan peraturan yang berlaku di masing-masing wilayah, dengan maksud mencegah atau membatasi eksploitasi lewat kerjasama dengan semua pihak terkait dalam pengawasan perdagangan.
+			Paus biru merupakan hewan yang terancam punah sehingga diperlukan upaya konservasi. Beberapa upaya konservasi telah dilakukan baik oleh pemerintah maupun oleh Lembaga Swadaya Masyarakat yang bergerak di bidang konservasi sumberdaya alam. Berikut adalah beberapa upaya konservasi yang telah dilakukan:
+			1.    Paus biru ditetapkan sebagai satwa yang dilindungi oleh pemerintah Indonesia dalam Peraturan Pemerintah Republik Indonesia No. 7 Tahun 1999 tentang Pengawetan Jenis Tumbuhan dan Satwa (Pemerintah Republik Indonesia 1999)
+			2.  Penetapan Kawasan Konservasi Perairan Nasional Laut Sawu yang dikelola sebagai Taman Nasional Perairan berdasarkan Keputusan nomor 20 5/KEPMEN-KP/2014 oleh Kementrian Kelautan dan Perikanan (KKP 2014)
+			3.  Pembentukan Unit Pelaksanaan Teknis oleh KKP yaitu Balai Kawasan Konservasi Perairan Nasional (BKKPN) Kupang sejak 2008 (KKP 2011)
+			4.  Upaya dari LSM seperti WWF (World Wildlife Fund) yang terlibat dalam implementasi pengelolaan Marine Protected Areas (MPAs) atau Kawasan Konservasi Laut (KKL) di kawasan seluas 4,9 juta hektar dari total 15,8 juta hektar yang ada di Indonesia termasuk di Solor-Alor, Nusa Tenggara Timur (WWF 2014)
+			5.      Penetapan Paus Biru sebagai hewan yang dilindungi sejak 1966 oleh IWC (International Whaling Comission) dan penetapan batas tangkap nol sejak 1986 untuk semua penangkapan paus komersial (Reilly 2008)
+			Kawasan Konservasi Perairan menurut IUCN (1994) adalah perairan pasang surut, dan wilayah sekitarnya, termasuk flora dan fauna di dalamnya, dan penampakan sejarah serta budaya, yang dilindungi secara hukum atau cara lain yang efektif, untuk melindungi sebagian atau seluruh lingkungan di sekitarnya. Sedangkan menurut Peraturan Pemerintah No. 60 Tahun 2007 dijelaskan bahwa Kawasan Konservasi Perairan (KKP) adalah kawasan perairan yang dilindungi, dikelola dengan sistem zonasi, untuk mewujudkan pengelolaan sumber daya ikan dan lingkungannya secara berkelanjutan. KKP terdiri atas Taman Nasional Perairan, Taman Wisata Perairan, Suaka Alam Perairan, dan Suaka Perikanan (Susanto, 2011).
+			Menurut Setiawan dkk (2014) kategori kelangkaan akibat perdagangan menurut CITES adalah:
+			1.   Appendix I adalah semua spesies hidupan liar yang terancam (threatened) dari kepunahan (extinction) yang dapat atau kemungkinan dapat disebabkan oleh adanya tindakan perdagangan internasional. Penjualan dari jenis kehidupan liar dalam kategori ini hanya dapat dilakukan setelah melalui proses pengaturan atau kajian yang sangat ketat dengan maksud tidak menambah tingkat tekanan terhadap kemampuan hidupnya (survival) dan hanya bisa dilakukan dengan alasan yang sangat kuat.
+			2.    Appendix II adalah (a) semua spesies hidupan liar walaupun tidak dalam kondisi terancam dari kepunahan, tetapi dapat menjadi terancam, terkecuali perdagangan terhadap kehidupan liar tersebut dikenai suatu peraturan yang ketat dalam rangka menghindari pemanfaatan yang tidak sepadan dengan daya kemampuan hidupnya, (b) hidupan liar lainnya yang perlu dikenai pengaturan dengan maksud bahwa perdagangan hidupan liar tersebut menghindari pemanfatan yang tidak sepadan dengan adanya kemampuan hidupnya, dan (c) dapat dilakukan pengontrolan secara efektif.
+			3.    Appendix III adalah semua spesies hidupan liar dimana semua pihak telah mengidentifikasinya sebagai bahan perdagangan yang dapat diterapkan sesuai dengan peraturan yang berlaku di masing-masing wilayah, dengan maksud mencegah atau membatasi eksploitasi lewat kerjasama dengan semua pihak terkait dalam pengawasan perdagangan.
 		</section>
 
 		<aside id="about" class="w3-modal">
@@ -361,6 +406,17 @@ Menurut Setiawan dkk (2014) kategori kelangkaan akibat perdagangan menurut CITES
 			</div>
 		</aside>
 
+		<aside id="zoom" class="w3-modal" onclick="this.style.display='none'">
+  		<span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
+  		<div class="w3-modal-content w3-animate-zoom">
+    		<img id="image" style="width:100%">
+  		</div>
+		</aside>
+
+		<aside class="w3-theme-d3" style="height: 50px;padding-right: 50px">
+			<a class="w3-hover-none w3-text-white w3-hover-text-cyan w3-xlarge w3-right" href="#top"><i class="fa fa-angle-double-up"></i></a>
+		</aside>
+
 		<!-- Footer -->
 		<footer class="w3-row">
 			<div class="w3-col m7 w3-container w3-theme-d4" style="height: 276.28px"><h1>Footer</h1></div>
@@ -382,18 +438,7 @@ Menurut Setiawan dkk (2014) kategori kelangkaan akibat perdagangan menurut CITES
 				</div>
 			</div>
 		</footer>
-		<script>
-			function show_hide(id) {
-				var x = document.getElementById(id);
-				if (x.style.display == 'block') {
-					x.style.display = 'none';
-				} else { 
-					x.style.display = 'block';
-				}
-			}
-			function show_about() {
-				document.getElementById('about').style.display='block'
-			}
-		</script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+		<script src="js/js.js"></script>
 	</body>
 </html>
