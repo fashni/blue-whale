@@ -197,7 +197,8 @@ h1 {
 
 #hiji, #dua, #tilu, #opat, #lima {
 	/*color: white;*/
-	padding: 0;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin: 0;
 	background-size:cover;
 	background-position:center-left;	
