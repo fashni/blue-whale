@@ -12,66 +12,186 @@
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	</head>
 	<body class="montserrat">
+
+		<!-- Header -->
 		<header class="header w3-container w3-text-white w3-theme-d3 w3-center">
-			<nav class="w3-theme-dark">
-				<div class="nav">
-					<ul class="w3-navbar w3-small w3-left-align">
+			<nav class="w3-theme-dark w3-top">
+				<div class="nav">					<ul class="w3-navbar w3-small w3-left-align">
+
 						<li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-							<a class="w3-hover-none w3-text-white w3-hover-text-cyan w3-xlarge" href="javascript:void(0);" onclick="collapse()"><i class="fa fa-bars"></i></a>
+							<a class="w3-hover-none w3-text-white w3-hover-text-cyan w3-xlarge" href="#" onclick="show_hide('menu-collapse')"><i class="fa fa-bars"></i></a>
 						</li>
 						<li><a class="w3-hover-none w3-padding-0" href="#home"><img src="images/logo1.png" style="height: 50px"></a></li>
-						<li class="w3-hide-small w3-right"><a class="w3-hover-none w3-text-light-grey w3-hover-text-indigo" href="#">ABOUT</a></li>
+						<li class="w3-hide-small w3-right"><a class="w3-hover-none w3-text-light-grey w3-hover-text-indigo" href="#" onclick="show_hide('about')">ABOUT</a></li>
 					</ul>
-					<div id="menu-collapse" class="w3-animate-opacity w3-hide w3-hide-large w3-hide-medium">
+					<div id="menu-collapse" class="w3-animate-opacity w3-hide-large w3-hide-medium" style="display: none;">
 						<ul class="w3-navbar w3-left-align w3-small">
-							<li><a class="w3-hover-none w3-text-light-grey w3-hover-text-cyan" href="#">ABOUT</a></li>
+							<li><a class="w3-hover-none w3-text-light-grey w3-hover-text-cyan" href="#" onclick="show_about()">ABOUT</a></li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-			<h1>Blue Whale Project</h1>
-			<h2>Learn more about The Blue Whale</h2>
+			<!-- <div id="slidena" class="w3-theme-d1"> -->
+			<figure id="slidena">
+				<div id="hiji">
+					<h1><strong>Mengapa Paus Biru Diburu?</strong></h1>
+					<h3>
+					Paus diburu karena beragam manfaat. Salahsatunya, bahan baku pembuatan lilin, produk tekstil, dan pelumas mesin, barang-barang kebutuhan rumah tangga, hiasan rumah, dan sumber penerangan yang tak menimbulkan bau dan asap. 
+					</h3>
+					<a href="">Baca Lebih Lengkap...</a>
+				</div>
+				<div id="dua">
+					<h1><strong>Paus Biru dan Global Warming</strong></h1>
+					<h3 >
+					Pemanasan global juga menyebabkan gangguan sirkulasi termohalin,  mengganggu pola migrasi mereka, dan mengganggu persediaan makanan.		
+					</h3>
+					<a href="">Baca Lebih Lengkap...</a>
+				</div>
+				<div id="tilu" >
+					<h1><strong>Depopulasi Paus Biru dan Ekosistem Laut</strong></h1>
+					<h3>
+					Kotoran paus berperan dalam mengurangi jumlah karbon dioksida di dalam laut. Jika paus punah, maka terjadi peningkatan keasaman air laut, yang merusak perkembangan kerang dan penyebab hujan asam.
+					</h3>
+					<a href="">Baca Lebih Lengkap...</a>
+				</div>
+				<div id="opat" >
+					<h1><strong>Regulasi</strong></h1>
+					<h3>
+					Perburuan Paus Biru dilarang oleh International Whaling Commission pada tahun 1962.
+					</h3>
+					<a href="">Baca Lebih Lengkap...</a>
+				</div>
+				<div id="lima" >
+					<h1><strong>Sejarah Paus Biru</strong></h1>
+					<h3>
+					Perburuan paus sudah berlangsung sejak zaman neolitik, yakni sejak 6000 SM, dan diburu dengan alat dan cara sederhana.
+					</h3>
+					<h3>
+					Paus biru kemudian mulai diburu di Islandia (1883), Kepulauan Faroe (1894), Newfoundland (1898), dan Spitsbergen (1903).
+					</h3>
+					<a href="">Baca Lebih Lengkap...</a>
+				</div>
+			</figure>
+			<!-- </div> -->
+			<!-- <h1>Paus Biru Sang Hewan Terbesar</h1> -->
+			<!-- <h2>Yuk Kita Kenalan dengan Paus Biru</h2> -->
 		</header>
+		
 		<section class="content w3-row w3-theme-d3">
 			<article class="w3-col m12 l6">
 				<div class="w3-row">
-					<a href="anatomy.html">
-						<div id="anatomy" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
-							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Anatomy</h4></div>
+					<a href="#deskripsi">
+						<div id="description" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
+							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Deskripsi</h4></div>
 						</div>
 					</a>
-					<a href="anatomy.html">
+					<a href="#habitat_">
+						<div id="habitat" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
+							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Habitat</h4></div>
+						</div>
+					</a>
+					<a href="#taksonomi">
 						<div id="taxonomy" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
-							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Taxonomy</h4></div>
-						</div>
-					</a>
-					<a href="anatomy.html">
-						<div id="evolution" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
-							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Evolution</h4></div>
+							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Taksonomi</h4></div>
 						</div>
 					</a>
 				</div>
 			</article>
 			<article class="w3-col m12 l6">
 				<div class="w3-row">
-					<a href="anatomy.html">
-						<div class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
+					<a href="#evolusi">
+						<div id="evolution" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
+							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Evolusi</h4></div>
+						</div>
+					</a>
+					<a href="#anatomi">
+						<div id="anatomy" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
 							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Anatomy</h4></div>
 						</div>
 					</a>
-					<a href="anatomy.html">
-						<div class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
-							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Anatomy</h4></div>
-						</div>
-					</a>
-					<a href="anatomy.html">
-						<div class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
-							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Anatomy</h4></div>
+					<a href="#depopulasi">
+						<div id="depopulation" class="w3-col m4 w3-display-container menu w3-card-2 w3-hover-shadow">
+							<div class="caption w3-display-bottommiddle w3-theme-l1"><h4>Depopulasi</h4></div>
 						</div>
 					</a>
 				</div>
 			</article>
 		</section>
+
+		<!-- Deskripsi -->
+		<section id="deskripsi" class="content w3-theme-d2">
+			<!-- Isi -->
+		</section>
+		
+		<!-- Habitat -->
+		<section id="habitat_" class="content w3-theme-d3">
+			<!-- Isi -->
+		</section>
+
+		<!-- Taksonomi -->
+		<section id="taksonomi" class="content w3-theme-d2">
+			<!-- Isi -->
+		</section>
+
+		<!-- Evolusi -->
+		<section id="evolusi" class="content w3-theme-d3">
+			<!-- Isi -->
+		</section>
+
+		<!-- Anatomi -->
+		<section id="anatomi" class="content w3-theme-d2">
+			<!-- Isi -->
+		</section>
+
+		<!-- Depopulasi -->
+		<section id="depopulasi" class="content w3-theme-d3">
+			<!-- Isi -->
+		</section>
+
+		<aside id="about" class="w3-modal">
+			<div class="w3-modal-content w3-card-8 w3-animate-zoom">
+				<header class="w3-container w3-theme-d5"> 
+					<span onclick="show_hide('about')" class="w3-closebtn">&times;</span>
+					<h2>Tentang kami</h2>
+				</header>
+				<section class="team">
+					<article class="w3-container leader w3-card-4">
+						<h4>Ketua</h4>
+						<hr>
+						<img src="gambar/161511019.jpg" class="w3-left w3-circle w3-margin-right" style="width: 60px; height: 60px">
+						<p>Nama  : Mufid Jamaluddin<br>
+						NIM  : 161511019</p>
+					</article>
+					<article class="w3-row">
+						<div class="w3-col m12">
+							<div class="w3-row">
+								<div class="w3-half w3-container member w3-card-2">
+									<p>Member</p>
+								</div>
+								<div class="w3-half w3-container member w3-card-2">
+									<p>Member</p>
+								</div>
+							</div>
+						</div>
+						<div class="w3-col m12">
+							<div class="w3-row">
+								<div class="w3-half w3-container member w3-card-2">
+									<p>Member</p>
+								</div>
+								<div class="w3-half w3-container member w3-card-2">
+									<p>Member</p>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
+				<footer class="w3-container w3-theme-d5">
+					<div style="height: 50px"></div>
+				</footer>
+			</div>
+		</aside>
+
+		<!-- Footer -->
 		<footer class="w3-row">
 			<div class="w3-col m7 w3-container w3-theme-d4" style="height: 276.28px"><h1>Footer</h1></div>
 			<div class="w3-col m5 w3-container w3-theme-dark">
@@ -93,13 +213,16 @@
 			</div>
 		</footer>
 		<script>
-			function collapse() {
-				var x = document.getElementById("menu-collapse");
-				if (x.className.indexOf("w3-show") == -1) {
-					x.className += " w3-show";
+			function show_hide(id) {
+				var x = document.getElementById(id);
+				if (x.style.display == 'block') {
+					x.style.display = 'none';
 				} else { 
-					x.className = x.className.replace(" w3-show", "");
+					x.style.display = 'block';
 				}
+			}
+			function show_about() {
+				document.getElementById('about').style.display='block'
 			}
 		</script>
 	</body>

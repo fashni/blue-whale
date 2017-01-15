@@ -34,8 +34,8 @@ h1 {
 	padding-top: 60px;
 }
 .content{
-	padding-top: 70px;
-	padding-bottom: 120px;
+	padding-top: 20px;
+	padding-bottom: 70px;
 	padding-right: 90px;
 	padding-left: 90px;
 }
@@ -53,7 +53,9 @@ h1 {
 	min-height: 150px;
 	min-width: 33.33%;
 	background: url(../images/menu_icon.svg) center/auto 80% no-repeat;
-	background-color: #2d397f;
+	/*background-color: #2d397f;*/
+	background-color: #334191;
+	/*background-color: #26316d;*/
 	transition: 1s ease;
 }
 .caption{
@@ -116,4 +118,108 @@ h1 {
 #evolution:hover {
 	background: url(../images/evolution.svg) 50% 5%/auto 80% no-repeat;
 	background-color: rgba(255,255,255,0.1);
+}
+
+
+@keyframes slidy{
+	0% 	{
+		left:0%;
+		}
+	20% {
+		left:0%;
+		}
+	25% {
+		left:-100%;
+		}
+	45%	{
+		left:-100%;
+		}
+	50%	{
+		left:-200%;
+		}
+	70% {
+		left:-200%;
+		}
+	75%	{
+		left:-300%;
+		}
+	95%	{
+		left:-300%;
+		}
+	100% {
+		left:-400%;
+		}
+}
+
+figure#slidena{
+	margin:0;
+	overflow:hidden;
+}
+
+figure#slidena div{
+	width:20%;
+	min-height:500px;
+	float:left;
+	text-align:center-right;
+	color:rgb(255,255,255);
+	text-shadow: 2px 2px rgba(64,64,64,0.5);
+}
+
+figure#slidena{
+	position:relative;
+	width:500%;
+	height:auto;
+	margin:0;
+	right:0;
+	text-align:right;
+	animation: 30s slidy infinite;
+}
+
+#hiji{
+		background:url(../gambar/7.jpg) no-repeat;
+}
+
+#dua{
+		background:url(../gambar/2.jpg) no-repeat;
+}
+
+#tilu{
+		background:url(../gambar/3.jpg) no-repeat;
+}
+
+#opat{
+		background:url(../gambar/4.png) no-repeat;
+}
+
+#lima{
+		background:url(../gambar/6.jpg) no-repeat;
+}
+
+#hiji, #dua, #tilu, #opat, #lima {
+	/*color: white;*/
+	padding: 0;
+	margin: 0;
+	background-size:cover;
+	background-position:center-left;	
+}
+
+.artikel{
+	text-align:center;
+	width:100%;
+	
+}
+
+.team{
+	padding: 30px;
+}
+
+.leader{
+	position: relative;
+	left: 25%;
+	max-width: 50%;
+	margin-bottom: 20px;
+}
+.member{
+	max-width: 50%;
+	/*margin: 2px;*/
 }
