@@ -131,7 +131,18 @@ h1,h2,h3,h4,h5,h6{
 	background: url(../images/evolution.svg) 50% 5%/auto 80% no-repeat;
 	background-color: rgba(255,255,255,0.1);
 }
-
+#description:hover {
+	background: url(../images/general.svg) 50% 5%/auto 80% no-repeat;
+	background-color: rgba(255,255,255,0.1);
+}
+#habitat:hover {
+	background: url(../images/location.svg) 50% 5%/auto 80% no-repeat;
+	background-color: rgba(255,255,255,0.1);
+}
+#population:hover {
+	background: url(../images/populasi.svg) 50% 5%/auto 80% no-repeat;
+	background-color: rgba(255,255,255,0.1);
+}
 
 @keyframes slidy{
 	0% 	{
