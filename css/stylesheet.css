@@ -203,23 +203,23 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #hiji{
-		background:url(../gambar/7.jpg) no-repeat;
+		background:url(../images/1a.png) no-repeat;
 }
 
 #dua{
-		background:url(../gambar/2.jpg) no-repeat;
+		background:url(../images/1b.png) no-repeat;
 }
 
 #tilu{
-		background:url(../gambar/3.jpg) no-repeat;
+		background:url(../images/1c.png) no-repeat;
 }
 
 #opat{
-		background:url(../gambar/4.png) no-repeat;
+		background:url(../images/1d.png) no-repeat;
 }
 
 #lima{
-		background:url(../gambar/6.jpg) no-repeat;
+		background:url(../images/1e.png) no-repeat;
 }
 
 #hiji, #dua, #tilu, #opat, #lima {
