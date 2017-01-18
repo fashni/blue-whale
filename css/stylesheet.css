@@ -44,6 +44,15 @@ h1,h2,h3,h4,h5,h6{
 	/*padding-left: 10%;
 	padding-right: 10%;*/
 }
+.article p{
+	text-align:justify;
+	text-justify:inter-word;
+}
+.article h1, h2{
+	text-transform:uppercase;
+	text-align:center;
+}
+
 .isi{
 	margin-left: 10%;
 	margin-right: 10%;
@@ -231,12 +240,6 @@ h1,h2,h3,h4,h5,h6{
 	background-position:center-left;	
 }
 
-.artikel{
-	text-align:center;
-	width:100%;
-	
-}
-
 .team{
 	padding: 10px;
 	overflow: hidden;
@@ -330,3 +333,4 @@ h1,h2,h3,h4,h5,h6{
 	font-family: Helvetica, Arial,sans-serif;
 	margin:0; 
 }
+
